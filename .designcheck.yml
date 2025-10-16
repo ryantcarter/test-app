@@ -1,0 +1,21 @@
+# DesignCheck Configuration
+# This file configures how DesignCheck captures screenshots for PRs in this repository
+
+# URL where the app will be running (on the build server)
+serverUrl: "https://designcheck.app"
+
+# Routes to capture screenshots for
+routes:
+  - "/"                    # Homepage
+
+# Devices to test on
+devices:
+  - "iPhone 14 Pro"        # Mobile view (390x844)
+  - "Desktop"              # Desktop view (1920x1080)
+
+# Optional: Additional delay after page load (milliseconds)
+# Useful for animations, lazy loading, etc.
+delayMs: 2000
+
+# Browser to use (chromium, firefox, webkit)
+browser: "chromium"
